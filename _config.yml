@@ -1,0 +1,9 @@
+markdown: kramdown
+kramdown:
+  input: GFM
+redcarpet:
+  extensions: ['tables']
+name: Memstate
+description: Build faster systems faster
+url: https://memstate.io/
+exclude: ['build-docs.pl']
