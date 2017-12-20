@@ -4,31 +4,32 @@ title: Start
 ---
 <div class="splash">
 	<h2><img src ="images/memstate-logo-inverted.png" height="52" style="vertical-align: middle;"/> <img src="images/memstate-logo-text-inverted.png" height="52"></h2>
-	<h3>The in-memory database for NET
+	<h3>In-memory OLTP for .NET 
 		<br />
 		<i>Build faster systems, faster</i></h3>
-		<!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/devrexlabs/memstate" data-show-count="true" aria-label="Star devrexlabs/memstate on GitHub">Star</a>
+		<a class="github-button" href="https://github.com/devrexlabs/memstate" data-show-count="true" aria-label="Star devrexlabs/memstate on GitHub">Star</a>
 </div>
 
 <div class="well large container-fluid">
 	<div class="row">
 		<div class="col-md-2"></div>
 		<div class="col-md-8">
-			<h1><em>If the data fits in RAM why move it back and forth between memory and disk?</em></h1>
+			<h1><em>Build faster systems, faster</em></h1>
 
 			<p style="line-height: 1.7">
-				In-memory technology is not just the latest buzz, it's spreading fast and is predicted to be highly disruptive.
+					Moving data back and forth between disk and RAM is extremely inefficient. In a traditional
+					layered backend architecture, most of the code is there to deal with this 
+					Memstate is designed from the ground up to run in-memory and 
 
-				The first version of Oracle ran on a PDP-11 with 128KB of RAM. The amount of available RAM is constantly increasing
-				with commodity servers approaching the 1TB mark, enough to hold 99% of all OLTP databases in memory.
-				The traditional RDBMS architecture, and the relational model along with it, are now obsolete.
+					Use Memstate to structure and manage your data in-memory, obtain transparent persistence, concurrency control
+					and transactions with strong ACID guarantees. Make your applications 100x faster, and your developers
+
+					Memstate has many possible use cases but is designed primarily
+					to handle complex OLTP workloads in a typical enterprise application.
 			</p>
 			<p style="line-height: 1.7">
-				OrigoDB enables you to build high quality, mission critical systems with real-time performance at a fraction of the time and cost.
-
-				This is not marketing gibberish! Please read on for a no nonsense description of our features.
-				Get in touch if you have questions or download and try it out today!
+				Memstate enables you to build high quality, mission critical
+				systems with real-time performance at a fraction of the time and cost.
 			</p>
 		</div>
 		<div class="col-md-2"></div>
@@ -43,28 +44,30 @@ title: Start
 	</style>
 	<div class="row">
 		<div class="col-md-4">
-			<h2>Blazing speed</h2>
+			<h2>100x performance</h2>
 			<p>
 				In-memory operations are orders of magnitude faster than disk operations.
-				A single OrigoDB engine can execute millions of read transactions per
-				second and thousands of write transactions per second with synchronous
-				command journaling to a local SSD.
+				A single Memstate engine can execute millions of read transactions 
+				and tens of thousands of write transactions per second, all at submillisecond latency. 
 			</p>
 		</div>
 		<div class="col-md-4">
-			<h2>Productivity</h2>
+			<h2>10x developer productivity</h2>
 			<p>
-				This is the #1 reason we built OrigoDB. A single object oriented domain model is far simpler
-				than the full stack including a relational model, object/relational mapping, data access code,
-				views and stored procedures. That's a lot of waste that can be eliminated!
+				This is the #1 reason we built Memstate. The traditional backend architecture has so many complex parts and
+				layers that can be eliminated when using an in-memory centric architecture. The traditional RDBMS backend developer needs to deal with
+				data access, relational modeling, object-relational mapping, data type conversion, sql tuning, caching, migrations and transaction
+				management to name a few things. 
+
+				With Memstate, a single in-memory domain model replaces the domain layer, data access and data layers.
 			</p>
 		</div>
 		<div class="col-md-4">
 			<h2>Software quality</h2>
 			<p>
-				The OrigoDB engine is 100% ACID out of the box. Commands execute one at a time, transitioning the in-memory
+				Memstate transactions are 100% ACID out of the box. Commands execute one at a time, transitioning the in-memory
 				model from one consistent state to the next. The data model, commands and queries are all strongly typed,
-				compile time checked, version controlled with the rest of your code and easily unit tested.
+				compile-time checked, version controlled with the rest of your code and easily unit tested.
 			</p>
 		</div>
 	</div>
@@ -72,9 +75,8 @@ title: Start
 		<div class="col-md-4">
 			<h2>Bring your own data model</h2>
 			<p>
-				OrigoDB data models, commands and queries are written in C# with runtime
-				access to the entire Mono/.NET class library. Create your own domain
-				specific model, or go with a generic one:
+				Memstate in-memory data models, commands and queries are written in C#.
+				Create your own domain specific model, or use one of the built-ins:
 			</p>
 			<ul>
 				<li>Relational</li>
@@ -83,73 +85,64 @@ title: Start
 				<li>Graph</li>
 				<li>Xml</li>
 				<li>Redis clone</li>
-				<li>Javascript</li>
+				<li>Message Broker</li>
 			</ul>
 		</div>
 		<div class="col-md-4">
-			<h2>Use cases</h2>
+			<h2>Real-time</h2>
 			<p>
-				Given the choice of data models, the possible applications are endless.
-				Here are a few examples just to give you a general picture:
+				sub-millisecond latency
 			</p>
 			<ul>
-				<li>General OLTP alternative</li>
-				<li>Domain Driven Design</li>
-				<li>Complex Event Processing</li>
-				<li>Real time analytics/search</li>
-				<li>Caching</li>
-				<li>Rapid prototyping</li>
-				<li>Online gaming</li>
-				<li>Serving ads</li>
+				
 			</ul>
 		</div>
 
 		<div class="col-md-4">
 			<h2>Modular architecture</h2>
 			<p>
-				OrigoDB can be easily customized to meet your specific requirements.
+				Memstate can easily be customized to meet your specific requirements.
 				Choose from existing modules or implement custom plugins.
 				Storage and wire formats:
 				<ul>
 					<li>JSON</li>
-					<li>Native binary</li>
-					<li>Protobuf</li>
+					<li>Wire (binary)</li>
+					<li>Protobuf (planned)</li>
 				</ul>
 				Backing stores:
 				<ul>
-					<li>File system</li>
-					<li>Sql Server</li>
 					<li>Event Store</li>
-					<li>NEventStore</li>
+					<li>PostgreSQL</li>
+					<li>Local filesystem</li>
 				</ul>
 			</p>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-4">
-			<h2>Traceability</h2>
+			<h2>Time travel</h2>
 			<p>
-				The command journal contains a complete history of every change ever made to the database.
+				The command journal contains a complete history of every change ever made to the data.
+				This means that: 
 			</p>
 			<ul>
-				<li>Browse, query, define projections or restore to any point in time</li>
-				<li>Know exactly who did what and when</li>
-				<li>Go back in time and fix bugs that corrupted the data model</li>
+				<li>Data can be restored to to any point in time</li>
+				<li></li>
+				<li>You know exactly who did what and when</li>
+				<li>Software engineers can go back in time and se</li>
 			</ul>
 		</div>
 		<div class="col-md-4">
 			<h2>Not just .NET</h2>
 			<p>
-				The OrigoDB Server REST api uses the widely supported JSON format allowing access from
-				virtually any platform.
-				Use the native NET client for optimal performance and the full set of features.
-				Both interfaces support ad-hoc queries using the powerful LINQ syntax.
+				The HTTP Command/Query API lets any client that can speak HTTP
+				execute commands and queries.
 			</p>
 		</div>
 		<div class="col-md-4">
 			<h2>Simple management</h2>
 			<p>
-				Easily administer OrigoDB Server using a simple and intuitive web-based interface.
+				Easily administer Memstate Server using a simple and intuitive web-based interface.
 			</p>
 			<ul>
 				<li>Monitor, start and stop nodes</li>
@@ -160,34 +153,33 @@ title: Start
 	</div>
 	<div class="row">
 		<div class="col-md-4">
-			<h2>Multi node partitioning</h2>
+			<h2>Open Source and free</h2>
 			<p>
-				If you're dealing with more data that can fit on a single server, OrigoDB supports data partitioning.
-				Choose an appropriate data model, define a partitioning scheme then set up as many server nodes as necessary.
+				Memstate is fully open source and licensed under the LGPL license. The source code is hosted on <a href="https://github.com/devrexlabs/memstate">Github</a>.
+				Memstate is free to use for both commercial and non-commercial purposes.
 			</p>
 		</div>
 		<div class="col-md-4">
-			<h2>Multiplatform and open source</h2>
+			<h2>Runs on Linux, MacOS and Windows</h2>
 			<p>
-				OrigoDB Server runs on Mono/.NET on either Windows, Linux or MacOS and is
-				based on the <a href="http://github.com/devrexlabs/origodb">open source OrigoDB engine</a>.
+				Memstate is based on .NET Standard 2.0 and runs on .NET Core >=2.0, .NET Framework >=4.6.1 or Mono >=5.4.
 			</p>
 		</div>
 		<div class="col-md-4">
 			<h2>High availability</h2>
 			<p>
-				OrigoDB Server features multi-server replication with any number of readonly replicas,
-				manual role switching and automatic client redirection.
+				Memstate supports any number of read/write replicas, just connect to 
 			</p>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-4 col-md-offset-2">
 			<h2>How does it work?</h2>
-			Persistence is achieved using write-ahead command logging with optional full model snapshots.
-			On startup, the in-memory model is restored from the most recent snapshot followed by command replay.
-			Commands and queries are processed by the kernel, the component responsible for atomicity,
-			isolation and durability.
+			When the memstate engine starts, the in-memory model is restored by replaying all
+			of the commands in the command journal. When the model is ready the engine
+			starts processing commands and queries. Commands are sent to the underlying storage provider
+			
+			
 		</div>
 		<div class="col-md-4">
 			<h2>So what's the catch?</h2>
@@ -199,7 +191,6 @@ title: Start
 					<li>Snapshots take time to read and write</li>
 					<li>System is readonly while snapshot is being taken</li>
 					<li>Bringing a large system online can take time</li>
-					<li>Rolling back a failed command involves a full restore</li>
 				</ul>
 			</p>
 		</div>

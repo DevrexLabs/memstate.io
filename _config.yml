@@ -6,4 +6,4 @@ redcarpet:
 name: Memstate
 description: Build faster systems faster
 url: https://memstate.io/
-exclude: ['build-docs.pl']
+exclude: ['build-docs.pl', 'LICENSE', 'README.md', 'firebase.json']
